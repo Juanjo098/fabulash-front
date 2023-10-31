@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../css/styles_inicio.css'
 import img1 from '../img/Bright-closed-eye-cropped.png'
 import img2 from '../img/Dark-open-eye-cropped.png'
@@ -24,7 +25,7 @@ function HomePage () {
         <img className='one' src={img1} />
         <img className='two' src={img2} />
       </div>
-      <button className='button'>Comenzar</button>
+      <Link to='/login' className='button'>Comenzar</Link>
     </div>
   )
 }

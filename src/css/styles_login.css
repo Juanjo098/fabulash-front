@@ -1,9 +1,98 @@
+.background-login {
+    background-color: #F5EFE4;
+    background-image: url(../img/squiggles-transformed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+}
+
+.top {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-family: "Spicy Rice";
+    font-size: 3.2rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0px;
+    color: #2d2d2d;
+    margin-top: 0px;
+}
+
+.fabulash-logo {
+    width: 9rem;
+    margin-bottom: 30px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+.login h2{
+    font-family: "Spicy Rice";
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: #2d2d2d;
+    margin-bottom: 1rem;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.boton {
+    justify-content: center;
+    display: grid;
+    grid-row: 2;
+    font-family: "Montserrat";
+    place-items: center;
+}
+
+.submit-button {
+    font-family: "Spicy Rice";
+    font-size: 1.2rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 1rem;
+    color: #FFF;
+    background-color: #2D2D2D;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    font-family: "Montserrat";
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    border-radius: 0.75rem;
+    border-color: #F5EFE4;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+}
+
+.register-link {
+    color: #545151;
+    font-size: 0.8rem;
+}
+
+/*
 body{
     height: 2100px;
     background-color: #F5EFE4;
     align-items: center;
     justify-content: center;
-    background-image: url(/images/squiggles-transformed.png);
+    background-image: url(../img/squiggles-transformed.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,4 +178,4 @@ body button {
     color: #545151;
     font-size: 2em;
 }
-
+*/
