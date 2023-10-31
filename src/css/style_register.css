@@ -1,0 +1,98 @@
+body{
+    height: 2100px;
+    background-color: #F5EFE4;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/squiggles-transformed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+a{
+    font-size: 100px;
+    color: #2d2d2d;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.all{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.top h1 {
+    font-family: "Spicy Rice";
+    font-size: 8em;
+    letter-spacing: 15px;
+    margin-bottom: 0px;
+    color: #2d2d2d;
+    margin-top: 0px;
+}
+
+.top img {
+    width: 370px;
+    margin-top: 50px;
+}
+
+
+.login h2{
+    font-family: "Spicy Rice";
+    font-size: 5em;
+    letter-spacing: 5px;
+    color: #2d2d2d;
+    margin-bottom: 35px;
+    margin-left: 5%;
+}
+
+.login input {
+    font-family: "Montserrat";
+    width: 90%;
+    height: 100px;
+    font-size: 3em;
+    border-radius: 30px;
+    border-color: #F5EFE4;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+.input {
+    text-align: center;
+}
+
+.boton{
+    justify-content: center;
+    display: grid;
+    grid-row: 2;
+    font-family: "Montserrat";
+    place-items: center;
+}
+
+body button {
+    width: 300px;
+    font-family: "Spicy Rice";
+    font-size: 3em;
+    padding: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 40px;
+    color: #FFF;
+    background-color: #2D2D2D;
+    margin-bottom: 30px;
+}
+
+.boton a {
+    color: #545151;
+    font-size: 2em;
+}
+

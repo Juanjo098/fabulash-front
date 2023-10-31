@@ -1,0 +1,92 @@
+
+/* Registro*/
+body {
+    height:840px;
+    width: 100%;
+    font-family: "Spicy Rice";
+    background-color:#F5EFE4;
+    justify-content: center;
+    background-image: url(/images/squiggles-transformed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box div {
+    width: 100px;
+    height: 100px;
+}
+
+.box .selected {
+    align-self: center;
+}
+
+button {
+    font-family: "Spicy Rice";
+    font-size: 20px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #2D2D2D;
+    margin-bottom: 14px;
+    size: 5rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    
+}
+
+.formulario {
+    align-self: center;
+    text-align: center;
+}
+
+form{
+    font-family: "Montserrat";
+    padding: 2%;
+    width: 90%;
+}
+
+input{
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 40px;
+}
+
+h1{
+    margin-top: 17%;
+    font-family: "Spicy Rice";
+    font-size: 3.7em;
+    color: #2D2D2D;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-family: "Spicy Rice";
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    color: #2d2d2d;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+}
+
+.images {
+    display: grid;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.images .ojo{
+    width:150px;
+}
+
+

@@ -1,0 +1,44 @@
+body{
+    font-family: "Spicy Rice";
+    background-color: #F5EFE4;
+}
+
+h1{
+    text-align: center;
+
+}
+ /* Estilos para el div de perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+  /* Estilos para la imagen de perfil */
+.perfil img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+  /* Estilos para el div de información */
+.info {
+    flex: 1;
+}
+
+  /* Estilos para las estrellas de calificación */
+.estrellas {
+    color: #FFD700; /* Color de estrellas pintadas */
+}
+
+.info h2{
+    font-size: 100%;
+    margin: 0%;
+}
+.info p{
+    font-size: 50%;
+    margin: 0%;
+}
