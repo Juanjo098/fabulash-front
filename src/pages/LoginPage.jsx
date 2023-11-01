@@ -11,7 +11,7 @@ function LoginPage () {
           <img src={img1} className='fabulash-logo' />
         </div>
         <div className='login'>
-          <h2>Login</h2>
+          <h2 className='second-title-login'>Login</h2>
           <form className='login-form'>
             <input className='form-control' type='email' placeholder='Email' />
             <input className='form-control' type='password' placeholder='Contraseña' />

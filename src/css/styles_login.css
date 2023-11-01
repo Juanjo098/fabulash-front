@@ -13,6 +13,7 @@
     min-height: 100vh;
     min-width: 100vw;
     align-items: center;
+    position: relative;
 }
 
 .top {
@@ -39,7 +40,7 @@
     flex-direction: column;
 }
 
-.login h2{
+.second-title-login{
     font-family: "Spicy Rice";
     font-size: 2em;
     letter-spacing: 2px;
@@ -72,8 +73,8 @@
 
 .form-control {
     font-family: "Montserrat";
-    width: 20rem;
-    height: 2rem;
+    width: 21rem;
+    height: 2.2rem;
     font-size: 1.25rem;
     border-radius: 0.75rem;
     border-color: #F5EFE4;
