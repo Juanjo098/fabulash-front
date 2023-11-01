@@ -1,9 +1,10 @@
 import '../css/styles_personal.css'
 import { PersonalCard } from '../components/PersonalCard.jsx'
 import { Link } from 'react-router-dom'
+import { useFetch } from '../hooks/useFetch.js';
 
 function PersonalPage () {
-  const personal = [
+  /*  const personal = [
     {
       id: 1,
       img: 'https://m.media-amazon.com/images/I/61kw0caY68L._AC_SX679_.jpg',
@@ -25,14 +26,17 @@ function PersonalPage () {
       especialidad: 'Maquillista',
       starsNumber: 5
     }
-  ]
+  ]*/
+
+  const { data, loading } = useFetch('https://apimocha.com/fabulash/employees')
 
   return (
     <div className='row-content'>
       <Link to='/' className='back-arrow'>&#8249;</Link>
       <h1 className='title-personal'>Elija Personal:</h1>
       <div className='lista-personal'>
-        {personal.map(({ id, img, name, especialidad, starsNumber }) => {
+        {loading && 'Loading...'}
+        {data?.map(({ id, img, name, especialidad, starsNumber }) => {
           return (
             <PersonalCard key={id} idSelected={id} img={img} name={name} experince={especialidad} starsNumber={starsNumber} />
           )
