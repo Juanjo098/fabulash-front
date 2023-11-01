@@ -1,44 +1,96 @@
-body{
-    font-family: "Spicy Rice";
+
+
+.row-content{
     background-color: #F5EFE4;
-}
-
-h1{
-    text-align: center;
-
-}
- /* Estilos para el div de perfil */
-.perfil {
-    display: flex;
     align-items: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin: 10px;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-  /* Estilos para la imagen de perfil */
-.perfil img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
+.back-arrow{
+    font-size: 50px;
+    color: #2d2d2d;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
 }
 
-  /* Estilos para el div de información */
-.info {
-    flex: 1;
+.title-personal {
+    font-family: "Spicy Rice";
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    color: #2d2d2d;
+    margin-top: 0px;
+    text-align: center;
 }
 
-  /* Estilos para las estrellas de calificación */
-.estrellas {
-    color: #FFD700; /* Color de estrellas pintadas */
+.personal {
+    background-color: #2d2d2d;
+    display: flex;
+    margin: 3%;
+    border-radius: 20px;
+    
 }
 
-.info h2{
-    font-size: 100%;
-    margin: 0%;
+.personal-img {
+    width: 30%;
+    margin: 5px;
+    border-radius: 20px;
 }
-.info p{
-    font-size: 50%;
-    margin: 0%;
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 2.5em;
+    margin: 5px;
+}
+
+.personal-name {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.personal-exerience {
+    font-size: 1rem;
+}
+
+.personal .info .stars{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    text-align: end;
+    bottom: 0;
+}
+
+.personal .info .stars i{
+    font-size: 1rem;
+}
+
+.personal .info .stars .checked {
+    color: rgb(255, 221, 0);
+}
+
+.button-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-personal{
+    font-family: "Spicy Rice";
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 40px;
+    color: #2d2d2d;
+    border: #2d2d2d;
+    background-color: #F5EFE4;
+    margin-bottom: 30px;
 }

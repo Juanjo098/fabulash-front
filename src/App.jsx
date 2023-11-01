@@ -5,7 +5,7 @@ import './css/app.css'
 const HomePage = lazy(() => import('./pages/HomePage.jsx'))
 const LoginPage = lazy(() => import('./pages/LoginPage.jsx'))
 const RegisterPage = lazy(() => import('./pages/RegisterPage.jsx'))
-const DatePage = lazy(() => import('./pages/DatePage.jsx'))
+const PersonalPage = lazy(() => import('./pages/PersonalPage.jsx'))
 
 function App () {
   return (
@@ -35,10 +35,10 @@ function App () {
         }
       />
       <Route
-        path='/date'
+        path='/personal'
         element={
           <Suspense fallback='Loading...'>
-            <DatePage />
+            <PersonalPage />
           </Suspense>
         }
       />

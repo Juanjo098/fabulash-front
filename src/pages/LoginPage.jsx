@@ -17,7 +17,7 @@ function LoginPage () {
             <input className='form-control' type='password' placeholder='Contraseña' />
           </form>
           <div className='boton'>
-            <Link to='/' className='submit-button'>Ingresar</Link>
+            <Link to='/personal' className='submit-button'>Ingresar</Link>
             <Link to='/register' className='register-link'>¿No tiene cuenta? Registrese aqui!</Link>
           </div>
         </div>
