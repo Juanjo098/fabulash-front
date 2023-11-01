@@ -1,9 +1,24 @@
-export const PersonalCard = ({ img, name, experince, starsNumber }) => {
+import { useContext } from 'react'
+import { PersonalContext } from '../context/personal'
+
+export const PersonalCard = ({ idSelected, img, name, experince, starsNumber }) => {
   const MAX_STARS = 5
   const starsArray = Array.from({ length: MAX_STARS }, (_, index) => index + 1)
 
+  const { isSelected, setSelected } = useContext(PersonalContext)
+
+  const handleClick = () => {
+    if (idSelected === isSelected) {
+      setSelected(0)
+    } else {
+      setSelected(idSelected)
+    }
+  }
+
+  const personalClass = isSelected === idSelected ? 'personal selected' : 'personal'
+
   return (
-    <div className='personal'>
+    <div onClick={handleClick} className={personalClass}>
       <img src={img} className='personal-img' />
       <div className='info'>
         <h3 className='personal-name'>{name}</h3>

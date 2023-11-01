@@ -33,6 +33,10 @@
     
 }
 
+.selected{
+    background-color: #beb581;
+}
+
 .personal-img {
     width: 30%;
     margin: 5px;

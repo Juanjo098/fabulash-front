@@ -34,7 +34,7 @@ function PersonalPage () {
       <div className='lista-personal'>
         {personal.map(({ id, img, name, especialidad, starsNumber }) => {
           return (
-            <PersonalCard key={id} img={img} name={name} experince={especialidad} starsNumber={starsNumber} />
+            <PersonalCard key={id} idSelected={id} img={img} name={name} experince={especialidad} starsNumber={starsNumber} />
           )
         })}
       </div>
