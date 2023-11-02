@@ -38,7 +38,8 @@
 }
 
 .personal-img {
-    width: 30%;
+    width: 110px;
+    min-width: 110px;
     margin: 5px;
     border-radius: 20px;
 }

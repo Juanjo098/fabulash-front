@@ -19,7 +19,7 @@ function ServicesPage () {
   return (
     <div className='row-content'>
       <Link to='/' className='back-arrow'>&#8249;</Link>
-      <h1 className='title-personal'>Elija Personal:</h1>
+      <h1 className='title-personal'>Elija Servicio:</h1>
       <div className='services'>
         {loading && 'Loading...'}
         {data?.map(({ clvser, nombre, descripcion }) => {
