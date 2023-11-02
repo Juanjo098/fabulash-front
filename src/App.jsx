@@ -6,6 +6,7 @@ const HomePage = lazy(() => import('./pages/HomePage.jsx'))
 const LoginPage = lazy(() => import('./pages/LoginPage.jsx'))
 const RegisterPage = lazy(() => import('./pages/RegisterPage.jsx'))
 const PersonalPage = lazy(() => import('./pages/PersonalPage.jsx'))
+const SericesPage = lazy(() => import('./pages/ServicesPage.jsx'))
 
 function App () {
   return (
@@ -31,6 +32,14 @@ function App () {
         element={
           <Suspense fallback='Loading...'>
             <RegisterPage />
+          </Suspense>
+        }
+      />
+      <Route
+        path='/services'
+        element={
+          <Suspense fallback='Loading...'>
+            <SericesPage />
           </Suspense>
         }
       />

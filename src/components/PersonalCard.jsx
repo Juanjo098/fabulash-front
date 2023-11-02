@@ -8,14 +8,17 @@ export const PersonalCard = ({ idSelected, img, name, experince, starsNumber }) 
   const { isSelected, setSelected } = useContext(PersonalContext)
 
   const handleClick = () => {
-    if (idSelected === isSelected) {
-      setSelected(0)
+    const newServiceState = { ...isSelected }
+    if (newServiceState.employee === idSelected) {
+      newServiceState.employee = 0
+      setSelected(newServiceState)
     } else {
-      setSelected(idSelected)
+      newServiceState.employee = idSelected
+      setSelected(newServiceState)
     }
   }
 
-  const personalClass = isSelected === idSelected ? 'personal selected' : 'personal'
+  const personalClass = isSelected.employee === idSelected ? 'personal selected' : 'personal'
 
   return (
     <div onClick={handleClick} className={personalClass}>

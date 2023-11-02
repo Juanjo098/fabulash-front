@@ -34,7 +34,7 @@
 }
 
 .selected{
-    background-color: #beb581;
+    background-color: #beb581 !important; 
 }
 
 .personal-img {
@@ -97,4 +97,22 @@
     border: #2d2d2d;
     background-color: #F5EFE4;
     margin-bottom: 30px;
+}
+
+.services{
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-service{
+    display: flex;
+    flex-direction: column;
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
 }
