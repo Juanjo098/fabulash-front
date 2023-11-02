@@ -10,6 +10,7 @@ export const ServiceCard = ({ clvser, nombre, descripcion }) => {
       newServiceState.service = 0
     } else {
       newServiceState.service = clvser
+      newServiceState.employee = 0
     }
     setSelected(newServiceState)
   }
