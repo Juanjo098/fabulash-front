@@ -39,6 +39,7 @@ function PersonalPage () {
       <Link to='/services' className='back-arrow'>&#8249;</Link>
       <h1 className='title-personal'>Elija Personal:</h1>
       <div className='lista-personal'>
+        {loading && 'Loading...'}
         {data?.map(({ clvemp, nombre, apellido, descripcion, estrellas, imagen }) => {
           return (
             <PersonalCard key={clvemp} idSelected={clvemp} img={imagen} name={`${nombre} ${apellido}`} experince={descripcion} starsNumber={estrellas} />
@@ -48,9 +49,12 @@ function PersonalPage () {
       <div className='button-container'>
         <Link to='/personal' className={buttonClass}>Siguiente</Link>
       </div>
-      <svg width='393' height='174' viewBox='0 0 393 174' fill='none' xmlns='http://www.w3.org/2000/svg'>
+      {/*
+              <svg className='svg-service' width='393' height='174' viewBox='0 0 393 174' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path d='M121 29.8069C51.444 5.66477 17.5446 15.7252 0 35.1713V178H393V6.3374C329.5 -11 292.247 11.7019 267.5 35.1713C245.11 56.4056 183.5 51.4999 121 29.8069Z' fill='#2D2D2D' />
       </svg>
+       */}
+
     </div>
   )
 }

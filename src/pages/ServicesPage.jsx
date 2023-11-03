@@ -4,6 +4,8 @@ import { PersonalContext } from '../context/personal.jsx'
 import { useContext } from 'react'
 import '../css/styles_personal.css'
 import { ServiceCard } from '../components/ServiceCard.jsx'
+import img1 from '../img/Dark-closed-eye-cropped.png'
+import img2 from '../img/Dark-open-eye-cropped.png'
 
 function ServicesPage () {
   const { isSelected } = useContext(PersonalContext)
@@ -16,24 +18,49 @@ function ServicesPage () {
     }
   }
 
+  const style1 = {
+    backgroundColor: '#F4A93F'
+  }
+  const style2 = {
+    backgroundColor: '#EE899E'
+  }
+  const style3 = {
+    backgroundColor: '#7D7BB1'
+  }
+
   return (
     <div className='row-content'>
       <Link to='/' className='back-arrow'>&#8249;</Link>
       <h1 className='title-personal'>Elija Servicio:</h1>
       <div className='services'>
         {loading && 'Loading...'}
-        {data?.map(({ clvser, nombre, descripcion }) => {
+        {data?.map(({ clvser, nombre, descripcion }, index) => {
+          let style
+          let img
+          switch (index) {
+            case 0:
+              style = style1
+              img = img2
+              break
+            case 1:
+              style = style2
+              img = img1
+              break
+            case 2:
+              img = img2
+              style = style3
+              break
+            default:
+              style = {}
+          }
           return (
-            <ServiceCard key={clvser} clvser={clvser} nombre={nombre} descripcion={descripcion} />
+            <ServiceCard key={clvser} clvser={clvser} nombre={nombre} descripcion={descripcion} style={style} img={img} />
           )
         })}
       </div>
-      <div className='button-container'>
+      <div className='button-container-service'>
         <Link onClick={handleNext} to='/personal' className={buttonClass}>Siguiente</Link>
       </div>
-      <svg width='393' height='174' viewBox='0 0 393 174' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path d='M121 29.8069C51.444 5.66477 17.5446 15.7252 0 35.1713V178H393V6.3374C329.5 -11 292.247 11.7019 267.5 35.1713C245.11 56.4056 183.5 51.4999 121 29.8069Z' fill='#2D2D2D' />
-      </svg>
     </div>
   )
 }
